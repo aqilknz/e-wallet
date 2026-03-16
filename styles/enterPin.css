@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rancho&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+body{
+    background-color: #2948FF;
+    /* overflow: hidden; */
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 1200;
+}
+.left__section{
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 50%;
+    height: 100vh;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo, .content p, .content h1{
+    margin: 10px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    text-align: center;
+    font-weight: bold;
+    color: #2948FF;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 10px;
+}
+.logo img{
+    width: 30px;
+}
+
+.content h1{
+    color: black;
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.content p{
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.pin__container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.pin__container input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.pin__container input:first-child {
+    border-bottom-color: #2948FF;
+}
+.submit__button{
+    width: 100%;
+    margin-top: 60px;
+    padding: 14px;
+    background-color: #2948FF;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: 0.3s;
+}
+.submit__button:hover{
+    background-color: #465fef;
+}
+
+.reset__link {
+    margin-top: 10px;
+    text-align: center;
+}
+.reset__link  span{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.reset__link a{
+    color: #2948FF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.right__section{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items:self-end;
+    overflow: hidden;
+} 
+.right__section img{
+    height: 90%;
+}
