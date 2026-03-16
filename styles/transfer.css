@@ -1,0 +1,190 @@
+/* Container Utama untuk Konten Transfer */
+:root{
+    --color-primary: white;
+    --color-secondary: #2948FF;
+    --color-third: #E8E8E8;
+    --text-muted: #8898aa;
+    --text-dark: #2d3436;
+    --red: #eb4d4b;
+    --green: #27ae60;
+
+    /* Typography */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+main{
+    flex-grow: 1;
+}
+.transfer-container {
+    padding: 40px;
+    min-height: 80vh;
+
+}
+
+.content-transfer{
+    border: 1px solid black;
+    padding: 40px 20px;
+}
+
+/* Header & Stepper */
+.transfer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+.title-icon {
+    width: 24px;
+    filter: invert(24%) sepia(91%) saturate(2355%) hue-rotate(228deg) brightness(101%) contrast(105%);
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+}
+
+.step.active {
+    color: var(--color-secondary);
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #f1f2f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: var(--font-bold);
+}
+
+.step.active .step-number {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.step-line {
+    color: #dfe6e9;
+    letter-spacing: 2px;
+}
+
+/* Search Bar Section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.search-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.search-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.search-bar {
+    position: relative;
+    width: 350px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid var(--color-third);
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    opacity: 0.5;
+}
+
+/* List Orang */
+.people-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    div:nth-child(2n+1){
+        background-color: var(--color-third);
+    }
+}
+
+.person-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.person-item:hover {
+    background-color: #f8faff;
+}
+
+.person-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.person-name {
+    font-weight: var(--font-medium);
+    color: #4b4b4b;
+}
+
+.person-phone {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+.favorite-btn img {
+    width: 20px;
+    opacity: 0.4;
+}
