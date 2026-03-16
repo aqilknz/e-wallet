@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Transaction - E-Wallet</title>
+    <link rel="stylesheet" href="styles/dashboardv1.css">
+    <link rel="stylesheet" href="styles/history.css">
+</head>
+<body>
+
+    <header class="main__header">
+        <div class="left">
+            <div class="logo">
+                <img src="src/money-wallet.png" alt="Logo">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="src/Ellipse 185.svg" alt="User" class="avatar">
+                    <span class="dropdown-arrow"><img src="src/down (1).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="src/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/Send.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item active">
+                    <img src="src/history-wht.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/2 User.svg" alt="Profile" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="src/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="landingPageV1.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="history-title-container">
+                <img src="src/history-blue.svg" alt="History Icon" class="title-icon">
+                <h2>History Transaction</h2>
+            </div>
+
+            <section class="card history-main-card">
+                <div class="history-controls">
+                    <h3>Find Transaction</h3>
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Enter Number Or Full Name">
+                        <img src="src/search.svg" alt="Search" class="search-icon">
+                    </div>
+                </div>
+
+                <div class="history-list">
+                    <div class="history-row">
+                        <img src="src/Rectangle 648.svg" alt="User" class="history-avatar">
+                        <span class="name">Ghaluh 1</span>
+                        <div class="phone-number">082116304337</div>
+                        <div class="amount-status pos">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                    
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-1.svg" alt="User" class="history-avatar">
+                        <span class="name">Cameron Williamson</span>                        
+                        <div class="phone-number">(308) 555-0121</div>
+                        <div class="amount-status neg">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-3 (2).svg" alt="User" class="history-avatar">
+                        <span class="name">Cody Fisher</span>
+                        <div class="phone-number">(704) 555-0127</div>
+                        <div class="amount-status pos">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                    
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-3 (2).svg" alt="User" class="history-avatar">
+                        <span class="name">Kristin Watson</span>
+                        <div class="phone-number">(603) 555-0123</div>
+                        <div class="amount-status neg">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-3 (2).svg" alt="User" class="history-avatar">
+                        <span class="name">Floyd Miles</span>
+                        <div class="phone-number">(671) 555-0110</div>
+                        <div class="amount-status pos">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-3 (2).svg" alt="User" class="history-avatar">
+                        <span class="name">Wade Warren</span>
+                        <div class="phone-number">(225) 555-0118</div>
+                        <div class="amount-status neg">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                    <div class="history-row">
+                        <img src="src/Rectangle 648-3 (2).svg" alt="User" class="history-avatar">
+                        <span class="name">Savannah Nguyen</span>
+                        <div class="phone-number">(217) 555-0113</div>
+                        <div class="amount-status pos">Rp.50.000</div>
+                        <button class="delete-btn"><img src="src/trash.svg" alt="Delete"></button>
+                    </div>
+                </div>
+
+                <div class="history-footer">
+                    <p class="show-text">Show 5 History of 100 History</p>
+                    <div class="page">
+                        <span class="page-link">Prev</span>
+                        <span class="page-link active">1</span>
+                        <span class="page-link">2</span>
+                        <span class="page-link">3</span>
+                        <span class="page-link">4</span>
+                        <span class="page-link">5</span>
+                        <span class="page-link">6</span>
+                        <span class="page-link">7</span>
+                        <span class="page-link">8</span>
+                        <span class="page-link">9</span>
+                        <span class="page-link">Next</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
