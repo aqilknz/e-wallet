@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up - E-Wallet</title>
+    <link rel="stylesheet" href="styles/dashboardv1.css">
+    <link rel="stylesheet" href="styles/topup.css">
+</head>
+
+<body>
+
+    <header class="main__header">
+        <div class="left">
+            <div class="logo">
+                <img src="src/money-wallet.png" alt="Logo">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="src/Ellipse 185.svg" alt="User" class="avatar">
+                    <span><img src="src/down (1).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="src/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/Send.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/history.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item active">
+                    <img src="src/icons8-upload-96.png" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/2 User.svg" alt="Profile" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="src/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="login.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="topup-header">
+                <img src="src/Upload-blue.svg" alt="" class="title-icon">
+                <h2>Top Up Account</h2>
+            </div>
+
+            <div class="dashboard-grid">
+                <section class="left-section card">
+                    <div class="form-group">
+                        <label class="section-title">Account Information</label>
+                        <div class="user-info-card">
+                            <img src="src/Profilekotak.svg">
+                            <div class="user-info-text">
+                                <strong>Ghaluh Wizard</strong>
+                                <span>(239) 555-0108</span>
+                                <span class="verified-badge"><img src="src/verified.svg" alt=""> Verified</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="section-title">Amount</label>
+                        <p class="input-desc">Type the amount you want to transfer to your e-wallet account</p>
+                        <div class="input-wrapper">
+                            <img src="src/u_money-bill-bl.svg" alt="" class="input-icon">
+                            <input type="text" placeholder="Enter Nominal Transfer">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="section-title">Payment Method</label>
+                        <p class="input-desc">Choose your payment method for top up account</p>
+
+                        <div class="payment-options">
+                            <label class="payment-item">
+                                <input type="radio" name="payment" checked>
+                                <div class="radio-custom"></div>
+                                <div class="payment-content">
+                                    <img src="src/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.svg"
+                                        alt="BRI">
+                                    <span>Bank Rakyat Indonesia</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-item">
+                                <input type="radio" name="payment">
+                                <div class="radio-custom"></div>
+                                <div class="payment-content">
+                                    <img src="src/Logo DANA (PNG-240p) - FileVector69 1.svg" alt="Dana">
+                                    <span>Dana</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-item">
+                                <input type="radio" name="payment">
+                                <div class="radio-custom"></div>
+                                <div class="payment-content">
+                                    <img src="src/Layer x0020 1.svg" alt="BCA">
+                                    <span>Bank Central Asia</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-item">
+                                <input type="radio" name="payment">
+                                <div class="radio-custom"></div>
+                                <div class="payment-content">
+                                    <img src="src/Layer x0020 1 (1).svg" alt="Gopay">
+                                    <span>Gopay</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-item">
+                                <input type="radio" name="payment">
+                                <div class="radio-custom"></div>
+                                <div class="payment-content">
+                                    <img src="src/Vector-bank.svg" alt="OVO">
+                                    <span>OVO</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="right-section card summary-card">
+                    <h3 class="section-title">Payment</h3>
+                    <div class="summary-details">
+                        <div class="summary-line">
+                            <span>Order</span>
+                            <strong>Idr. 40.000</strong>
+                        </div>
+                        <div class="summary-line">
+                            <span>Delivery</span>
+                            <strong>Idr. 0</strong>
+                        </div>
+                        <div class="summary-line">
+                            <span>Tax</span>
+                            <strong>Idr. 4.000</strong>
+                        </div>
+                        <hr class="summary-divider">
+                        <div class="summary-line total">
+                            <span>Sub Total</span>
+                            <strong>Idr. 44.000</strong>
+                        </div>
+                    </div>
+                    <button class="btn-submit">Submit</button>
+                    <p class="promo-text">*Get Discount if you pay with Bank Central Asia</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
