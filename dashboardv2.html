@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet Dashboard V2</title>
+    <link rel="stylesheet" href="styles/dashboardv2.css">
+</head>
+<body>
+
+    <header class="main__header">
+        <div class="left">
+            <div class="logo">
+                <img src="src/money-wallet.png" alt="Logo">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header-actions">
+                <button class="icon-btn"><img src="src/search.svg" alt="Search"></button>
+                <button class="icon-btn"><img src="src/ShoppingCart.svg" alt="Cart"></button>
+                <div class="user-profile">
+                    <div class="avatar-container">
+                        <img src="src/Ellipse 185.svg" alt="User" class="avatar">
+                        <span><img src="src/down (1).svg" alt=""></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <div class="top-menu">
+                    <button type="button" class="menu-item active">
+                        <img src="src/dashboard-two.svg" alt="">
+                        <a href="#">Dashboard</a>
+                    </button>
+                    <button type="button" class="menu-item">
+                        <img src="src/Send.svg" alt="">
+                        <a href="transfer.html">Transfer</a>
+                    </button>
+                    <button type="button" class="menu-item">
+                        <img src="src/history.svg" alt="">
+                        <a href="history.html">History</a>
+                    </button>
+                    <button type="button" class="menu-item">
+                        <img src="src/Upload.svg" alt="">
+                        <a href="topup.html">Top Up</a>
+                    </button>
+                    <button type="button" class="menu-item">
+                        <img src="src/2 User.svg" alt="">
+                        <a href="profile.html">Profile</a>
+                    </button>
+                </div>
+                <button type="button" class="menu-item logout">
+                    <img src="src/Log Out.svg" alt="">
+                    <a href="login.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="top-row">
+                <div class="card balance-card">
+                    <div class="card-label">
+                        <img src="src/balance.svg" alt=""> <span>Balance</span>
+                    </div>
+                    <div class="amount-large">Rp120.000</div>
+                    <div class="mini-stats">
+                        <div class="mini-stat">
+                            <span class="label">Income</span>
+                            <span class="val green">Rp200.000 +2% <img src="src/ArrowRise-s.svg" alt=""></span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="label">Expense</span>
+                            <span class="val red">Rp100.000 +5% <img src="src/ArrowRise-s (1).svg" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fast-service-card">
+                    <h3>Fast Service</h3>
+                    <div class="action-buttons">
+                        <button class="btn-blue"><img src="src/u_money-insert.svg" alt=""> Top Up</button>
+                        <button class="btn-blue"><img src="src/Send-wht.svg" alt=""> Transfer</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-row">
+                <div class="card chart-card">
+                    <div class="chart-header">
+                        <h3>Financial Chart</h3>
+                        <div class="chart-filters">
+                            <button class="filter-btn">7 Days <img src="src/down (1).svg" alt=""></button>
+                            <button class="filter-btn">All <img src="src/down (1).svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <img src="src/dv2.png" alt="Chart" class="chart-img">
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item"><span class="dot blue"></span> Income</div>
+                        <div class="legend-item"><span class="dot red"></span> Expense</div>
+                    </div>
+                </div>
+
+                <div class="card history-card">
+                    <div class="history-header">
+                        <h3>Transaction History</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <img src="src/1-1.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Robert Fox</strong>
+                                <span>Transfer</span>
+                            </div>
+                            <div class="item-amount pos">+Rp50.000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <img src="src/1-2.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Floyd Miles</strong>
+                                <span>Send</span>
+                            </div>
+                            <div class="item-amount neg">-Rp50.000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <img src="src/1-3.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Ujang</strong>
+                                <span>Send</span>
+                            </div>
+                            <div class="item-amount neg">-Rp50.000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <img src="src/1-1.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Robert Fox</strong>
+                                <span>Transfer</span>
+                            </div>
+                            <div class="item-amount pos">+Rp50.000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <img src="src/1-2.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Floyd Miles</strong>
+                                <span>Send</span>
+                            </div>
+                            <div class="item-amount neg">-Rp50.000</div>
+                        </div>
+                        <div class="transaction-item">
+                            <img src="src/1-3.svg" alt="" class="item-img">
+                            <div class="item-info">
+                                <strong>Ujang</strong>
+                                <span>Send</span>
+                            </div>
+                            <div class="item-amount neg">-Rp50.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
