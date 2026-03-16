@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="styles/dashboardv1.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+
+<body>
+
+    <header class="main__header">
+        <div class="left">
+            <div class="logo">
+                <img src="src/money-wallet.png" alt="Logo">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="src/Ellipse 185.svg" alt="User" class="avatar">
+                    <span class="dropdown-arrow"><img src="src/down (1).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="src/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/Send.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/history.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="src/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item active prof">
+                    <img src="src/2 User.svg" alt="Profile" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="src/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="landingPageV1.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="profile-title-container">
+                <img src="src/2 User-blue.svg" alt="Profile Icon" class="title-icon">
+                <h2>Profile</h2>
+            </div>
+
+            <section class="card profile-main-card">
+                <form class="profile-form">
+                    <div class="form-section">
+                        <label class="section-label">Profile Picture</label>
+                        <div class="profile-pic">
+                            <div class="avatar-placeholder">
+                                <img src="src/Profile1.svg" alt="Default Avatar">
+                            </div>
+                            <div class="pic-actions">
+                                <button type="button" class="btn-action change-btn">
+                                    <img src="src/edit-2.svg" alt=""> Change Profile
+                                </button>
+                                <button type="button" class="btn-action delete-profile-btn">
+                                    <img src="src/trash-red.svg" alt=""> Delete Profile
+                                </button>
+                            </div>
+                        </div>
+                        <p class="helper-text">The profile picture must be 512 x 512 pixels or less</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <div class="input-wrapper">
+                            <img src="src/User (1).svg" alt="" class="input-icon">
+                            <input type="text" placeholder="Ghaluh Wizard Anggoro">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <div class="input-wrapper">
+                            <img src="src/Phone.svg" alt="" class="input-icon">
+                            <input type="text" placeholder="6282116304337">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <div class="input-wrapper">
+                            <img src="src/mail.svg" alt="" class="input-icon">
+                            <input type="email" placeholder="ghaluhwizz@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="settings-group">
+                        <div class="setting-item">
+                            <label>Password</label>
+                            <a href="#" class="link-action">Change Password</a>
+                        </div>
+                        <div class="setting-item">
+                            <label>Pin</label>
+                            <a href="#" class="link-action">Change Pin</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
