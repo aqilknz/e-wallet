@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet - Transfer</title>
+    <link rel="stylesheet" href="../styles/dashboardv1.css">
+    <link rel="stylesheet" href="../styles/transfer.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="left">
+            <div class="logo">
+                <img src="../src/icons/Money Wallet.svg" alt="Logo E-Wallet">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="../src/images/Ellipse 185.svg" alt="Foto profil" class="avatar">
+                    <span><img src="../src/icons/down (1).svg" alt="Dropdown"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item active">
+                    <img src="../src/icons/Send-wht.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/history.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/2 User.svg" alt="Profil" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="../src/icons/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="../index.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="transfer-container card">
+                <div class="transfer-header">
+                    <div class="title-section">
+                        <img src="../src/icons/Send.svg" alt="Ikon transfer" class="title-icon">
+                        <h2>Transfer Money</h2>
+                    </div>
+
+                    <div class="stepper">
+                        <div class="step active">
+                            <span class="step-number">1</span>
+                            <span class="step-text">Find People</span>
+                        </div>
+                        <div class="step-line">----------</div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-text">Set Nominal</span>
+                        </div>
+                        <div class="step-line">----------</div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-text">Finish</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-transfer">
+                    <div class="search-section">
+                        <div class="search-info">
+                            <h3>Find People</h3>
+                            <p>8 Result Found For Ghaluh</p>
+                        </div>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Enter Number Or Full Name">
+                            <img src="../src/icons/search.svg" alt="Cari" class="search-icon">
+                        </div>
+                    </div>
+
+                    <div class="people-list">
+                        <table class="people-table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Full Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Favorite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/Rectangle 648.svg" alt="Avatar Ghaluh 1" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 1</span></td>
+                                    <td><span class="person-phone">(239) 555-0108</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1-1.svg" alt="Avatar Ghaluh 2" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 2</span></td>
+                                    <td><span class="person-phone">(480) 555-0103</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1.svg" alt="Avatar Ghaluh 1" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 1</span></td>
+                                    <td><span class="person-phone">(239) 555-0108</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1-1.svg" alt="Avatar Ghaluh 2" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 2</span></td>
+                                    <td><span class="person-phone">(480) 555-0103</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1.svg" alt="Avatar Ghaluh 1" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 1</span></td>
+                                    <td><span class="person-phone">(239) 555-0108</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1-1.svg" alt="Avatar Ghaluh 2" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 2</span></td>
+                                    <td><span class="person-phone">(480) 555-0103</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1.svg" alt="Avatar Ghaluh 1" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 1</span></td>
+                                    <td><span class="person-phone">(239) 555-0108</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                                <tr class="person-item" onclick="window.location.href='transfer-nominal.html'">
+                                    <td><img src="../src/images/1-1.svg" alt="Avatar Ghaluh 2" class="person-avatar"></td>
+                                    <td><span class="person-name">Ghaluh 2</span></td>
+                                    <td><span class="person-phone">(480) 555-0103</span></td>
+                                    <td><button class="favorite-btn"><img src="../src/icons/star.svg" alt="Favorit"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
