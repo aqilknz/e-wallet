@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Transaction - E-Wallet</title>
+    <link rel="stylesheet" href="../styles/dashboardv1.css">
+    <link rel="stylesheet" href="../styles/history.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="left">
+            <div class="logo">
+                <img src="../src/icons/Money Wallet.svg" alt="Logo">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="../src/images/Ellipse 185.svg" alt="User" class="avatar">
+                    <span class="dropdown-arrow"><img src="../src/icons/down (1).svg" alt="down"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Send.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item active">
+                    <img src="../src/icons/history-wht.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/2 User.svg" alt="Profile" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="../src/icons/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="../index.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="history-title-container">
+                <img src="../src/icons/history-blue.svg" alt="History Icon" class="title-icon">
+                <h2>History Transaction</h2>
+            </div>
+
+            <section class="card history-main-card">
+                <div class="history-controls">
+                    <h3>Find Transaction</h3>
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Enter Number Or Full Name">
+                        <img src="../src/icons/search.svg" alt="Search" class="search-icon">
+                    </div>
+                </div>
+
+                <div class="history-list">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Full Name</th>
+                                <th>Phone Number</th>
+                                <th>Amount</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648.svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Ghaluh 1</span></td>
+                                <td><div class="phone-number">082116304337</div></td>
+                                <td><div class="amount-status pos">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648-1.svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Cameron Williamson</span></td>
+                                <td><div class="phone-number">(308) 555-0121</div></td>
+                                <td><div class="amount-status neg">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648-3 (2).svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Cody Fisher</span></td>
+                                <td><div class="phone-number">(704) 555-0127</div></td>
+                                <td><div class="amount-status pos">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648.svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Kristin Watson</span></td>
+                                <td><div class="phone-number">(603) 555-0123</div></td>
+                                <td><div class="amount-status neg">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648-1.svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Floyd Miles</span></td>
+                                <td><div class="phone-number">(671) 555-0110</div></td>
+                                <td><div class="amount-status pos">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648-3 (2).svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Wade Warren</span></td>
+                                <td><div class="phone-number">(225) 555-0118</div></td>
+                                <td><div class="amount-status neg">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+
+                            <tr class="history-row">
+                                <td><img src="../src/images/Rectangle 648.svg" alt="User" class="history-avatar"></td>
+                                <td><span class="name">Savannah Nguyen</span></td>
+                                <td><div class="phone-number">(217) 555-0113</div></td>
+                                <td><div class="amount-status pos">Rp.50.000</div></td>
+                                <td><button class="delete-btn"><img src="../src/icons/trash.svg" alt="Delete"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="history-footer">
+                    <p class="show-text">Show 5 History of 100 History</p>
+                    <div class="page">
+                        <span class="page-link">Prev</span>
+                        <span class="page-link active">1</span>
+                        <span class="page-link">2</span>
+                        <span class="page-link">3</span>
+                        <span class="page-link">4</span>
+                        <span class="page-link">5</span>
+                        <span class="page-link">6</span>
+                        <span class="page-link">7</span>
+                        <span class="page-link">8</span>
+                        <span class="page-link">9</span>
+                        <span class="page-link">Next</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
