@@ -1,7 +1,9 @@
-/* --- Top Up Specific Styles --- */
+@import "global.css";
 
-.left-section {
-    border: 1px solid var(--color-third);
+.main-content {
+    background-color: var(--color-primary);
+    flex-grow: 1;
+    padding: 30px;
 }
 
 .topup-header {
@@ -21,6 +23,25 @@
     width: 24px;
 }
 
+.dashboard-grid {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.left-section {
+    flex: 2;
+    border: 1px solid var(--color-third);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.right-section {
+    flex: 1;
+    border: 1px solid var(--color-third);
+}
+
 .section-title {
     display: block;
     font-weight: var(--font-bold);
@@ -30,10 +51,27 @@
 }
 
 .form-group {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* User Info Card */
+.user-info-card {
+    background-color: #f8f9fb;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info-card img {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
 .user-info-card {
     background-color: #F8F9FB;
     padding: 15px 20px;
@@ -70,8 +108,11 @@
     align-items: center;
     gap: 5px;
 }
+.verified-badge img{
+    width: 20px;
+    height: 20px;
+}
 
-/* Input Styles */
 .input-desc {
     font-size: 14px;
     color: var(--text-muted);
@@ -84,7 +125,7 @@
     align-items: center;
 }
 
-.input-wrapper .input-icon {
+.input-icon {
     position: absolute;
     left: 15px;
     width: 18px;
@@ -97,10 +138,15 @@
     border: 1px solid var(--color-third);
     border-radius: 10px;
     font-size: 14px;
+    font-family: var(--font-primary);
     outline: none;
+    transition: border-color 0.2s;
 }
 
-/* --- PAYMENT OPTIONS (Identik dengan Gambar) --- */
+.input-wrapper input:focus {
+    border-color: var(--color-secondary);
+}
+
 .payment-options {
     display: flex;
     flex-direction: column;
@@ -111,16 +157,50 @@
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    background-color: #F8F9FB;
+    background-color: #f8f9fb;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: border-color 0.2s;
     border: 1px solid transparent;
+}
+
+.payment-item:has(input:checked) {
+    border-color: var(--color-secondary);
+    background-color: #f0f3ff;
 }
 
 .payment-item input {
     position: absolute;
     opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-custom {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.payment-item input:checked ~ .radio-custom {
+    border-color: var(--color-secondary);
+}
+
+.payment-item input:checked ~ .radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
 }
 
 .payment-content {
@@ -138,46 +218,13 @@
 
 .payment-content span {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-regular);
     color: #666;
 }
 
-/* Custom Radio Circle */
-.radio-custom {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    position: relative;
-    flex-shrink: 0;
-    background-color: #fff;
-}
-
-/* Logika Checked */
-.payment-item input:checked ~ .radio-custom {
-    border-color: #3b82f6; /* Warna biru */
-}
-
-.payment-item input:checked ~ .radio-custom::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    background-color: #3b82f6;
-    border-radius: 50%;
-}
-
 .payment-item input:checked ~ .payment-content span {
-    color: #333;
-    font-weight: 500;
-}
-
-/* Summary Card */
-.right-section {
-    border: 1px solid var(--color-third);
+    color: var(--text-dark);
+    font-weight: var(--font-medium);
 }
 
 .summary-card {
@@ -207,7 +254,9 @@
 
 .summary-line.total {
     font-size: 16px;
+    font-weight: var(--font-bold);
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .btn-submit {
@@ -219,14 +268,138 @@
     border-radius: 8px;
     padding: 15px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-semi-bold);
+    font-family: var(--font-primary);
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #1a35e0;
 }
 
 .promo-text {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-muted);
-    margin-top: 15px;
-    text-align: left;
+    margin-top: 12px;
     line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 24px;
+    }
+
+    .dashboard-grid {
+        gap: 16px;
+    }
+
+    .left-section {
+        flex: 1.5;
+    }
+
+    .payment-content {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 20px 16px;
+        width: 100%;
+    }
+
+    .topup-header {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-grid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .left-section,
+    .right-section {
+        flex: unset;
+        width: 100%;
+    }
+
+    .summary-card {
+        height: auto;
+    }
+
+    .user-info-card {
+        gap: 14px;
+    }
+
+    .payment-item {
+        padding: 12px 16px;
+    }
+
+    .payment-content {
+        gap: 12px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 16px 12px;
+    }
+
+    .topup-header h2 {
+        font-size: 16px;
+    }
+
+    .title-icon {
+        width: 20px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .user-info-card {
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .user-info-card img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .payment-content img {
+        width: 40px;
+        height: 24px;
+    }
+
+    .payment-content span {
+        font-size: 13px;
+    }
+
+    .summary-line {
+        font-size: 13px;
+    }
+
+    .summary-line.total {
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    .promo-text {
+        font-size: 12px;
+    }
 }
