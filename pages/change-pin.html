@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Pin - Profile</title>
+    <link rel="stylesheet" href="../styles/dashboardv1.css">
+    <link rel="stylesheet" href="../styles/change-pin.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="left">
+            <div class="logo">
+                <img src="../src/icons/Money Wallet.svg" alt="Logo E-Wallet">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="../src/images/Ellipse 185.svg" alt="Foto profil" class="avatar">
+                    <span class="dropdown-arrow"><img src="../src/icons/down (1).svg" alt="Dropdown"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Send.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/history.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item active prof">
+                    <img src="../src/icons/2 User.svg" alt="Profile" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="../src/icons/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="../index.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="profile-title-container">
+                <img src="../src/icons/2 User-blue.svg" alt="Profile" class="title-icon">
+                <h2>Profile</h2>
+            </div>
+
+            <div class="card change-pin-card">
+                <h3 class="cp-title">Change Pin 👋</h3>
+                <p class="cp-desc">Please save your pin because this so important.</p>
+
+                <div class="cp-group">
+                    <div class="pin-fields" id="new-pin">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                        <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" class="pin-digit">
+                    </div>
+                </div>
+
+                <button class="cp-submit">Submit</button>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
