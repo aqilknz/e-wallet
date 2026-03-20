@@ -1,0 +1,165 @@
+.main-content {
+    background-color: var(--color-primary);
+    flex-grow: 1;
+    padding: 30px;
+}
+.menu .prof img {
+    filter: brightness(0) invert(1);
+}
+
+.profile-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.profile-title-container h2 {
+    font-size: 20px;
+    font-weight: var(--font-bold);
+    color: var(--text-dark);
+}
+
+.profile-title-container .title-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.change-pin-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    text-align: center;
+}
+
+.cp-title {
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
+    color: var(--text-dark);
+}
+
+.cp-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: -12px;
+}
+
+.cp-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.pin-fields {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.pin-digit {
+    width: 48px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid var(--color-third);
+    background: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-semi-bold);
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.2s;
+    caret-color: var(--color-secondary);
+}
+
+.pin-digit:focus {
+    border-bottom-color: var(--color-secondary);
+}
+
+.cp-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: var(--font-semi-bold);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.cp-submit:hover {
+    background-color: #1a35e0;
+}
+
+.cp-submit:active {
+    transform: scale(0.99);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 20px 16px;
+        width: 100%;
+    }
+
+    .change-pin-card {
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .pin-digit {
+        width: 40px;
+        height: 48px;
+        font-size: 1.3rem;
+    }
+
+    .pin-fields {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 16px 12px;
+    }
+
+    .profile-title-container h2 {
+        font-size: 16px;
+    }
+
+    .change-pin-card {
+        padding: 20px 16px;
+    }
+
+    .cp-title {
+        font-size: 1rem;
+    }
+
+    .pin-digit {
+        width: 36px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+    .pin-fields {
+        gap: 8px;
+    }
+
+    .cp-submit {
+        padding: 13px;
+        font-size: 0.95rem;
+    }
+}
