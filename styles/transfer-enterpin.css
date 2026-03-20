@@ -1,0 +1,222 @@
+@import "global.css";
+.page-disabled {
+    pointer-events: none;
+    user-select: none;
+}
+
+.main-overlay {
+    position: fixed;
+    top: 70px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    pointer-events: all;
+}
+
+.pin-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    pointer-events: all;
+}
+
+.pin-modal-overlay.active {
+    display: flex;
+}
+
+.pin-modal-box {
+    background-color: var(--color-primary);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 520px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    pointer-events: all;
+}
+
+.pin-modal-top {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--color-third);
+}
+
+.pin-modal-label {
+    font-size: 0.82rem;
+    font-weight: var(--font-bold);
+    color: var(--text-dark);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.pin-modal-body {
+    padding: 32px 30px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pin-modal-heading {
+    font-size: 1.6rem;
+    font-weight: var(--font-medium);
+    color: #111111;
+    line-height: 1.2;
+}
+
+.pin-modal-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.pin-modal-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.pin-modal-digit {
+    width: 48px;
+    border: none;
+    border-bottom: 3px solid var(--color-secondary);
+    outline: none;
+    font-size: 2rem;
+    font-weight: var(--font-semi-bold);
+    color: #111111;
+    text-align: center;
+    padding-bottom: 6px;
+    background: transparent;
+    font-family: var(--font-primary);
+    transition: border-color 0.2s;
+    caret-color: var(--color-secondary);
+}
+
+.pin-modal-digit:focus {
+    border-bottom-color: #1a35e0;
+}
+
+.pin-modal-next {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: var(--font-semi-bold);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 8px;
+}
+
+.pin-modal-next:hover {
+    background-color: #1a35e0;
+}
+
+.pin-modal-next:active {
+    transform: scale(0.98);
+}
+
+.pin-modal-forgot {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.pin-modal-forgot a {
+    color: var(--color-secondary);
+    font-weight: var(--font-semi-bold);
+    text-decoration: none;
+}
+
+.pin-modal-forgot a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .main-overlay,
+    .pin-modal-overlay {
+        left: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-overlay,
+    .pin-modal-overlay {
+        left: 0;
+        top: 70px;
+    }
+
+    .pin-modal-overlay {
+        padding: 16px;
+        align-items: center;
+    }
+
+    .pin-modal-box {
+        max-width: 100%;
+    }
+
+    .pin-modal-top {
+        padding: 16px 20px;
+    }
+
+    .pin-modal-body {
+        padding: 24px 20px 28px;
+    }
+
+    .pin-modal-heading {
+        font-size: 1.3rem;
+    }
+
+    .pin-modal-fields {
+        gap: 10px;
+        margin: 16px 0;
+    }
+
+    .pin-modal-digit {
+        width: 40px;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pin-modal-overlay {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .pin-modal-box {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .pin-modal-heading {
+        font-size: 1.15rem;
+    }
+
+    .pin-modal-fields {
+        gap: 8px;
+    }
+
+    .pin-modal-digit {
+        width: 36px;
+        font-size: 1.4rem;
+    }
+
+    .pin-modal-next {
+        padding: 13px;
+        font-size: 0.95rem;
+    }
+}
