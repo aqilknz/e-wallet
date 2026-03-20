@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet - Transfer Nominal</title>
+    <link rel="stylesheet" href="../styles/dashboardv1.css">
+    <link rel="stylesheet" href="../styles/transfer-nominal.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="left">
+            <div class="logo">
+                <img src="../src/icons/Money Wallet.svg" alt="Logo E-Wallet">
+                <span>E-Wallet</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-profile">
+                <span class="user-name">Ghaluh Wizard</span>
+                <div class="avatar-container">
+                    <img src="../src/images/Ellipse 185.svg" alt="Foto profil" class="avatar">
+                    <span><img src="../src/icons/down (1).svg" alt="Dropdown"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/dashboard-two-wht.svg" alt="Dashboard" class="icon-img">
+                    <a href="dashboardv1.html">Dashboard</a>
+                </button>
+                <button type="button" class="menu-item active">
+                    <img src="../src/icons/Send-wht.svg" alt="Transfer" class="icon-img">
+                    <a href="transfer.html">Transfer</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/history.svg" alt="History" class="icon-img">
+                    <a href="history.html">History</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/Upload.svg" alt="Top Up" class="icon-img">
+                    <a href="topup.html">Top Up</a>
+                </button>
+                <button type="button" class="menu-item">
+                    <img src="../src/icons/2 User.svg" alt="Profil" class="icon-img">
+                    <a href="profile.html">Profile</a>
+                </button>
+                <button type="button" class="menu-item logout">
+                    <img src="../src/icons/Log Out.svg" alt="Keluar" class="icon-img">
+                    <a href="../index.html">Keluar</a>
+                </button>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="transfer-container card">
+                <div class="transfer-header">
+                    <div class="title-section">
+                        <img src="../src/icons/Send.svg" alt="Ikon transfer" class="title-icon">
+                        <h2>Transfer Money</h2>
+                    </div>
+
+                    <div class="stepper">
+                        <div class="step done">
+                            <span class="step-number">1</span>
+                            <span class="step-text">Find People</span>
+                        </div>
+                        <div class="step-line">----------</div>
+                        <div class="step active">
+                            <span class="step-number">2</span>
+                            <span class="step-text">Set Nominal</span>
+                        </div>
+                        <div class="step-line">----------</div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-text">Finish</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-transfer">
+
+                    <div class="section-block">
+                        <h3 class="section-title">People Information</h3>
+                        <div class="person-info-card">
+                            <img src="../src/images/Rectangle 648.svg" alt="Avatar Ghaluh 1" class="person-info-avatar">
+                            <div class="person-info-detail">
+                                <span class="person-info-name">Ghaluh 1</span>
+                                <span class="person-info-phone">(239) 555-0108</span>
+                                <span class="verified-badge">
+                                    <img src="../src/icons/verified.svg" alt="Terverifikasi">
+                                    Verified
+                                </span>
+                            </div>
+                            <button class="favorite-btn">
+                                <img src="../src/icons/star.svg" alt="Favorit">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <h3 class="section-title">Amount</h3>
+                        <p class="section-desc">Type the amount you want to transfer and then press continue to the next steps.</p>
+                        <div class="input-wrapper">
+                            <img src="../src/icons/u_money-bill-bl.svg" alt="Nominal" class="input-icon">
+                            <input type="number" placeholder="Enter Nominal Transfer" class="nominal-input">
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <h3 class="section-title">Notes</h3>
+                        <p class="section-desc">You can add some notes for this transfer such as payment coffee or something</p>
+                        <textarea placeholder="Enter Some Notes" class="notes-input"></textarea>
+                    </div>
+
+                    <button class="submit-btn" onclick="window.location.href='transfer-enterpin.html'">Submit & Transfer</button>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
