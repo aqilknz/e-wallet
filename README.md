@@ -7,3 +7,7 @@ Untuk menjalankan proyek ini di komputer kamu, ikuti langkah-langkah berikut:
    Gunakan perintah berikut untuk mengambil branch utama:
    ```bash
    git clone --single-branch --branch main https://github.com/aqilknz/e-wallet.git
+2. **Deploy di Vercel**
+   Klik link dibawah ini:
+   ```bash
+   https://e-wallet-rev.vercel.app/
